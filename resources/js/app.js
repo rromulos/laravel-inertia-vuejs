@@ -6,7 +6,12 @@ import { createInertiaApp } from '@inertiajs/inertia-vue3';
 import { InertiaProgress } from '@inertiajs/progress';
 import { resolvePageComponent } from 'laravel-vite-plugin/inertia-helpers';
 import { ZiggyVue } from '../../vendor/tightenco/ziggy/dist/vue.m';
+
+// Import Quasar Plugin
 import { Quasar } from 'quasar';
+
+// Import Quasar Styles
+import 'quasar/src/css/index.sass';
 
 const appName = window.document.getElementsByTagName('title')[0]?.innerText || 'Laravel';
 
@@ -16,8 +21,7 @@ createInertiaApp({
     setup({ el, app, props, plugin }) {
         return createApp({ render: () => h(app, props) })
             .use(plugin)
-            .use(Quasar, {
-              })
+            .use(Quasar, {})
             .use(ZiggyVue, Ziggy)
             .mount(el);
     },

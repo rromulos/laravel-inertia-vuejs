@@ -22,8 +22,7 @@ export default defineConfig({
         }),
         quasar({
             autoImportComponentCase: 'combined',
-            sassVariables: '@/assets/quasar.variables.scss'
-          }),
+        }),
 
         AutoImport({
         imports: [
