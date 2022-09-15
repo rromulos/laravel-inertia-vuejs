@@ -1,6 +1,9 @@
 <template>
     <div>
         <h1>Postsx {{ name }}</h1>
+
+        <QBtn color="secondary" label="Click this Button" />
+
         <ul v-for="post in posts" :key="post.id">
             <li>
                 <h2>
