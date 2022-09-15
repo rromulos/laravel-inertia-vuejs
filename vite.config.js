@@ -45,12 +45,6 @@ export default defineConfig({
         }),
 
         Components({
-            dirs: [
-              './resources/frontend/Components',
-              './resources/frontend/FormInputs',
-              './resources/frontend/Layouts',
-              './resources/frontend/Transitions'
-            ],
             extensions: [
               'vue'
             ],
